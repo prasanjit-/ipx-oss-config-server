@@ -1,0 +1,15 @@
+{
+    "id": "ipx-oss-config-server-5001",
+    "container": {
+      "docker": {
+        "image": "mesos-dev.inframetic.com:5000/ipx-oss-config-server-docker:latest",
+        "network": "HOST",
+        "portMappings": [
+          {"containerPort": 5001, "servicePort":5001, "hostPort":5001}
+        ]
+      }
+    },
+    "cpus": 0.2,
+    "mem": 512.0,
+    "instances": 1
+}
